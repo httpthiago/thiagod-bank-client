@@ -15,10 +15,10 @@ function Login() {
                 </div>
             </div>
             <div className="right-side-layout">
-                <form action="/login" className="login-form" method="post">
+                <form action="/autenticar" className="login-form" method="post">
                     <div className="input-group">
                         <Input inputType="cpf" inputPlaceholder="CPF" name="cpf"/>
-                        <Input inputType="password" inputPlaceholder="Senha" name="password"/>
+                        <Input inputType="password" inputPlaceholder="Senha" name="senha"/>
                     </div>
                     <div className="button-group">
                         <Button value="Entrar" type="submit"/>

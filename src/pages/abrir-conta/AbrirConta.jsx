@@ -16,7 +16,7 @@ function AbrirConta() {
         </Link>
         <p className="info-description"> Abra sua <span className="left-side-blue-text">conta</span> </p>
       </div>
-      <form className="open-acc-form" action="">
+      <form className="open-acc-form" action="/finalizar-abertura-conta" method="post">
         <div className="open-acc-input-group">
           <Input inputType="text" inputPlaceholder="Nome" name="nome"/>
           <Input inputType="cpf" inputPlaceholder="CPF" name="cpf"/>
