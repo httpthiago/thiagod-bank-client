@@ -15,14 +15,14 @@ function Login() {
                 </div>
             </div>
             <div className="right-side-layout">
-                <form className="login-form">
+                <form action="/login" className="login-form" method="post">
                     <div className="input-group">
                         <Input inputType="cpf" inputPlaceholder="CPF" name="cpf"/>
-                        <Input inputType="password" inputPlaceholder="Senha"/>
+                        <Input inputType="password" inputPlaceholder="Senha" name="password"/>
                     </div>
                     <div className="button-group">
                         <Button value="Entrar" type="submit"/>
-                        <Link to="/abrir-conta"><Button value="Abrir conta" type="button"/></Link> 
+                        <Link style={{textDecoration: "none"}} to="/abrir-conta"><Button value="Abrir conta" type="button"/></Link> 
                     </div>
                 </form>
                 

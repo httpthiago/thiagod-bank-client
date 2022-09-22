@@ -14,51 +14,68 @@ function cpfMask (cpf) {
   }
 
 function Input(props) {
+    const [name, setName] = useState("");
     const [cpf, setCpf] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [birthday, setBirthday] = useState("");
     switch (props.inputType) {
         case "cpf":
             return (
                 <div className="generic-input">
-                    <img src={CpfIcon} alt="" />
                     <input type="text" placeholder={props.inputPlaceholder} value={cpf} onChange={e => setCpf(cpfMask(e.target.value)) }
                     name={props.name}
                     autoComplete="off"/>
+                    <img src={CpfIcon} alt="" />
                 </div>
                 
             );
         case "password": 
             return (
                 <div className="generic-input">
+                    <input type={props.inputType} 
+                           placeholder={props.inputPlaceholder} 
+                           value={password} 
+                           onChange={e => setPassword(e.target.value)}
+                           name={props.name}/>
                     <img src={PasswordIcon} alt="" />
-                    <input type={props.inputType} placeholder={props.inputPlaceholder}>
-                    </input>
                 </div>
                 
             );
         case "email": 
             return (
                 <div className="generic-input">
+                    <input type="email" 
+                           placeholder={props.inputPlaceholder}
+                           name={props.name}
+                           value={email}
+                           onChange={e => setEmail(e.target.value)}
+                    />
                     <img src={EmailIcon} alt="" />
-                    <input type="email" placeholder={props.inputPlaceholder}>
-                    </input>
                 </div>
                 
             );  
         case "birthday": 
         return (
             <div className="generic-input">
+                <input type="date" 
+                       placeholder={props.inputPlaceholder}
+                       name={props.name}
+                       value={birthday}
+                       onChange={e => setBirthday(e.target.value)}/>
                 <img src={BirthdayIcon} alt="" />
-                <input type="date" placeholder={props.inputPlaceholder}>
-                </input>
             </div>
             
         ); 
         default: 
             return (
                 <div className="generic-input">
+                    <input type={props.inputType} 
+                           placeholder={props.inputPlaceholder}
+                           name={props.name}
+                           value={name}
+                           onChange={e => setName(e.target.value)}/>
                     <img src={CpfIcon} alt="" />
-                    <input type={props.inputType} placeholder={props.inputPlaceholder}>
-                    </input>
                 </div>
             );
     }    

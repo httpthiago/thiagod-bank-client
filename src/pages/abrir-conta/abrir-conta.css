@@ -13,8 +13,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 40px;
-  padding-top: 30px;
 }
 
 .open-acc-container h1 {
@@ -30,6 +30,7 @@
 
 .open-acc-input-group {
   display: flex;
+  gap: 25px;
 }
 
 .open-acc-form {
@@ -37,5 +38,14 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+.open-acc-form button {
+  margin-top: 50px;
+}
+
+a:visited {
+  color: #FFF;
 }
 
