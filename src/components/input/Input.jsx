@@ -19,7 +19,8 @@ function Input(props) {
                 <div className="generic-input">
                     <img src={CpfIcon} alt="" />
                     <input type="text" placeholder={props.inputPlaceholder} value={cpf} onChange={e => setCpf(cpfMask(e.target.value)) }
-                    name={props.name}/>
+                    name={props.name}
+                    autoComplete="off"/>
                 </div>
                 
             );

@@ -1,5 +1,6 @@
-import Input from "../components/input/Input";
-import Button from "../components/button/Button";
+import Input from "../../components/input/Input";
+import Button from "../../components/button/Button";
+import { Link } from "react-router-dom";
 
 function Login() {
     return (
@@ -21,7 +22,7 @@ function Login() {
                     </div>
                     <div className="button-group">
                         <Button value="Entrar" type="submit"/>
-                        <Button value="Criar conta" type="button"/>
+                        <Link to="/abrir-conta"><Button value="Abrir conta" type="button"/></Link> 
                     </div>
                 </form>
                 
