@@ -1,6 +1,8 @@
 import "./input.css"
 import CpfIcon from "../../img/icone-input.png";
 import PasswordIcon from "../../img/icone-pwd.png";
+import EmailIcon from "../../img/icon-email.png";
+import BirthdayIcon from "../../img/icon-dob.png";
 import { useState } from "react";
 function cpfMask (cpf) {
     return cpf
@@ -33,9 +35,31 @@ function Input(props) {
                 </div>
                 
             );
+        case "email": 
+            return (
+                <div className="generic-input">
+                    <img src={EmailIcon} alt="" />
+                    <input type="email" placeholder={props.inputPlaceholder}>
+                    </input>
+                </div>
+                
+            );  
+        case "birthday": 
+        return (
+            <div className="generic-input">
+                <img src={BirthdayIcon} alt="" />
+                <input type="date" placeholder={props.inputPlaceholder}>
+                </input>
+            </div>
+            
+        ); 
         default: 
             return (
-                <input type="text"></input>
+                <div className="generic-input">
+                    <img src={CpfIcon} alt="" />
+                    <input type={props.inputType} placeholder={props.inputPlaceholder}>
+                    </input>
+                </div>
             );
     }    
 }

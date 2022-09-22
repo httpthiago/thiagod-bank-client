@@ -10,14 +10,32 @@
   height: 100vh;
   background-color: #0C0C0E;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 30px;
 }
 
 .open-acc-container h1 {
   font-weight: 300;
   font-size: 96px;
+  text-align: center;
 }
 
 .info-description {
   font-size: 32px;
+  text-align: center;
+}
+
+.open-acc-input-group {
+  display: flex;
+}
+
+.open-acc-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
