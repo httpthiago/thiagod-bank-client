@@ -8,9 +8,13 @@
   
   1 -  Abra um terminal e navegue até a pasta do projeto.
   
-  2 - Na pasta do projeto, digite o seguinte comando 
-      ```console
-    npm install
+  2 - Na pasta do projeto, digite o seguinte comando em seu terminal: <br/> 
+      ```
+        npm install 
+      ```
+      <br/>
+      
+  3 - Em seguida, execute o comando: 
     ```
-    
-  3 - 
+      npm start
+    ```
