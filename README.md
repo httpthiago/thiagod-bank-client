@@ -18,3 +18,7 @@
     ```
       npm start
     ```
+    
+  4 - Ao finalizar o processo, você deve visualizar em seu navegador a seguinte página: 
+  
+  ![Tela de login](./src/resources/prototypes/login.jpg "Tela de login do sitema")
